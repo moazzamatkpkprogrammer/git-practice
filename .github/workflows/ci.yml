@@ -1,4 +1,4 @@
-name: Simple CI
+name: Simple CI with Script
 
 on: [push]
 
@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Say Hello
-        run: echo "Hello Moazzam, your CI workflow is running!"
+      - name: Run hello.sh script
+        run: ./hello.sh
 
